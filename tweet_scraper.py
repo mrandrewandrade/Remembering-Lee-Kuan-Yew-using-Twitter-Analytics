@@ -58,6 +58,7 @@ with open(output_file_name, 'w') as f:
                 print("No more tweets found")
                 break
             for tweet in new_tweets:
+                #dump the tweets into JSON format
                 f.write(jsonpickle.encode(tweet._json) +
                         '\n')
             tweet_count += len(new_tweets)
@@ -73,3 +74,4 @@ with open(output_file_name, 'w') as f:
             break
  
 print ("Downloaded {0} tweets, Saved to {1}".format(tweet_count, output_file_name))
+
