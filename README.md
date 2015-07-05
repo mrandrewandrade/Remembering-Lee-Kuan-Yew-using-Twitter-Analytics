@@ -58,7 +58,6 @@ Most retweets
 
 ### Final results
 
-![alt_text](http://mrandrewandrade.github.io/inc/rememberingLKY.png)     
 
 [Final Visualization (PNG, 8.6 MiB)] (http://mrandrewandrade.github.io/inc/rememberingLKY.png)      
 
