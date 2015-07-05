@@ -69,6 +69,6 @@ While brainstorming for the project, we came up with the idea for using NLP to g
 
 ![alt_text](img/sentiment_diagram.png)     
 
-Since sentiment is very difficult to extract from tweets and contriversial we decided not to include it in the final visualziation.   
+Since sentiment is very difficult to extract from tweets and very contriversial we decided not to pursue the idea further or include it in the final visualziation.   
 
 The quick protyped r script can be found [here] (sentiment_cloud.R)
