@@ -20,26 +20,29 @@ Limitations according to [API Rate Limit](https://dev.twitter.com/oauth/overview
 Therefore we can only scrape a maximum of 18000 tweet/15 minutes for up to 7 day old tweets which not include all the tweets.    
 
 Steps:    
-    a) Get [Access token auth](https://dev.twitter.com/oauth/overview/application-owner-access-tokens)    
+a) Get [Access token auth](https://dev.twitter.com/oauth/overview/application-owner-access-tokens)    
 
-    b) Use [python script] (tweet_scraper.py) to extract tweets in form of json    
+b) Use [python script] (tweet_scraper.py) to extract tweets in form of json    
 Note: This was written in python 2 and requires jsonpickle and tweepy    
 
 ### 2) Clean data and visualize
 
-    a) Export the JSON to CSV
+a) Export the JSON to CSV
 
 Since the visualization was to be created manually by the two designers in my group, I exported the scraped JSON to CSV and wrote scripts to extract revelant information.    
 
-    b) Determine the frequency of words using an [R script](find_word_frequency.R) to use in the word cloud
+b) Determine the frequency of words using an [R script](find_word_frequency.R) to use in the word cloud
 
-    c) Determine the number of retweets using an [R script](number_retweets.R)
+c) Determine the number of retweets using an [R script](number_retweets.R)
 
-    d) Sentiment analysis using NLP (see below)
+d) Sentiment analysis using NLP (see below)
 
 ##Results
 
 ### Design Elements
+
+[Design Document (PDF, 1.4 MiB)] (http://mrandrewandrade.github.io/inc/rememberingLKY.pdf)
+
 
 Number of tweets per day:     
 ![alt text](img/num_daily_tweets.png)
@@ -55,8 +58,9 @@ Most retweets
 
 ### Final results
 
+![alt_text](http://mrandrewandrade.github.io/inc/rememberingLKY.png)     
+
 [Final Visualization (PNG, 8.6 MiB)] (http://mrandrewandrade.github.io/inc/rememberingLKY.png)      
-[Design Document (PDF, 1.4 MiB)] (http://mrandrewandrade.github.io/inc/rememberingLKY.pdf)
 
 
 
@@ -66,4 +70,6 @@ While brainstorming for the project, we came up with the idea for using NLP to g
 
 ![alt_text](img/sentiment_diagram.png)     
 
-Since sentiment is very difficult to extract from tweets and contriversial we decided not to include it in the final visualziation.
+Since sentiment is very difficult to extract from tweets and contriversial we decided not to include it in the final visualziation.   
+
+The quick protyped r script can be found [here] (sentiment_cloud.R)
